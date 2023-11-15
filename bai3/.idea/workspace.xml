@@ -5,19 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1053ba4-7e93-4035-9031-fc6c83fcbb2c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../bai2a/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bai1a/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bai1a/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bai1a/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bai1a/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai1b/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bai1b/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai1b/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bai1b/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai2b/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bai2b/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bai2b/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bai2b/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../test/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/main/java/codegym/vn/bean/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/main/java/codegym/vn/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../test/src/main/java/codegym/vn/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/main/java/codegym/vn/repository/IStudentRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/main/java/codegym/vn/repository/StudentRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/main/java/codegym/vn/service/IStudentService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/main/java/codegym/vn/service/StudentService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/src/main/webapp/WEB-INF/view/student/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../test/src/main/webapp/WEB-INF/view/student/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test2/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test2/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test2/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../test2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test2/.idea/workspace.xml" afterDir="false" />
@@ -50,6 +44,7 @@
         <option value="Interface" />
         <option value="Class" />
         <option value="Jsp File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -77,17 +72,17 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Module 4/bai1b",
+    "last_opened_file_path": "C:/Users/PC/OneDrive/Máy tính/case/final",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -96,13 +91,15 @@
       <recent name="D:\Module 4\test\src\main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Module 4\bai1b\src\main\webapp\WEB-INF\view" />
       <recent name="D:\Module 4\test\src\main\webapp\WEB-INF\view\student" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="codegym.vn.repository" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.21" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.21" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/student/list" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/list" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="Gradle : codegym.vn : test-1.0-SNAPSHOT.war">
@@ -201,9 +198,13 @@
       <workItem from="1698836960542" duration="5948000" />
       <workItem from="1699117075604" duration="7000" />
       <workItem from="1699381353359" duration="3481000" />
-      <workItem from="1699419749220" duration="672000" />
-      <workItem from="1699422165152" duration="274000" />
-      <workItem from="1699614990010" duration="11000" />
+      <workItem from="1699419375063" duration="2000000" />
+      <workItem from="1699432799705" duration="594000" />
+      <workItem from="1699440160136" duration="613000" />
+      <workItem from="1699595237813" duration="274000" />
+      <workItem from="1699613722915" duration="10181000" />
+      <workItem from="1699625207148" duration="1468000" />
+      <workItem from="1699873085001" duration="7184000" />
     </task>
     <servers />
   </component>

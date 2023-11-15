@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Product</title>
+</head>
+<body>
+
+<h2>Create Product</h2>
+
+<!-- Form sử dụng Thymeleaf attributes để bind với đối tượng Product -->
+<form th:action="@{/save}" th:object="${product}" method="post">
+    <label for="name">Product Name:</label>
+    <input type="text" id="name" th:field="*{name}" />
+
+    <label for="price">Product Price:</label>
+    <input type="text" id="price" th:field="*{price}" />
+    <label for="price">Product Detail:</label>
+    <input type="text" id="detail" th:field="*{detail}" />
+    <label for="price">Producer:</label>
+    <input type="text" id="producer" th:field="*{producer}" />
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
