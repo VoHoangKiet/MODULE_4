@@ -1,7 +1,7 @@
 package org.example.repository.impl;
 
-import org.example.entity.Song;
-import org.example.repository.SongRepository;
+import org.example.entity.Comment;
+import org.example.repository.CommentRepository;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -11,33 +11,33 @@ import java.util.*;
 
 @Repository
 @Transactional
-public class SongRepositoryImpl implements SongRepository {
-    public SongRepositoryImpl() {
+public class CommentRepositoryImpl implements CommentRepository {
+    public CommentRepositoryImpl() {
     }
 
     @PersistenceContext
     private EntityManager entityManager;
 
     @Override
-    public boolean create(Song song) {
-        entityManager.persist(song);
+    public boolean create(Comment comment) {
+        entityManager.persist(comment);
         return true;
     }
 
     @Override
-    public boolean update(Song song) {
-        entityManager.merge(song);
+    public boolean update(Comment comment) {
+        entityManager.merge(comment);
         return true;
     }
 
     @Override
-    public Song findById(int id) {
-        return entityManager.find(Song.class, id);
+    public Comment findById(int id) {
+        return entityManager.find(Comment.class, id);
     }
 
     @Override
-    public List<Song> findAll() {
-        return entityManager.createQuery("From Song ").getResultList();
+    public List<Comment> findAll() {
+        return entityManager.createQuery("From Comment ").getResultList();
     }
 
     @Override

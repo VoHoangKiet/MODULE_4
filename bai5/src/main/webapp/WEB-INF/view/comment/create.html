@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create comment</title>
+</head>
+<body>
+    <h1>Create new comment</h1>
+    <form th:action="@{/comment/create}" method="post" th:object="${comment}">
+        <table>
+            <tr>
+                <td>Point</td>
+                <td>
+                    <select th:field="*{point}">
+                        <option th:value="${1}"
+                                th:text="${1}"></option>
+                        <option th:value="${2}"
+                                th:text="${2}"></option>
+                        <option th:value="${3}"
+                                th:text="${3}"></option>
+                        <option th:value="${4}"
+                                th:text="${4}"></option>
+                        <option th:value="${5}"
+                                th:text="${5}"></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Author</td>
+                <td><input type="text" th:field="*{author}" /></td>
+            </tr>
+            <tr>
+                <td>Feedback</td>
+                <td><input type="text" th:field="*{feedback}" /></td>
+            </tr>
+            <tr>
+                <td><input type="reset" value="Reset"></td>
+                <td><input type="submit" value="Register"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

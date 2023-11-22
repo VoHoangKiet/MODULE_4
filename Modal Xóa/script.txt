@@ -1,0 +1,6 @@
+<script>
+    function sendInfoToModal(id, name) {
+        document.getElementById("name_delete").innerText = name;
+        document.getElementById("id").value = id;
+    }
+</script>
