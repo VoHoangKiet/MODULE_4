@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail Blog</title>
+</head>
+<body>
+    <h1>Detail Blog</h1>
+    <table th:object="${blog}">
+        <tr>
+            <td>ID:</td>
+            <td th:text="*{id}"></td>
+        </tr>
+        <tr>
+            <td>Name:</td>
+            <td th:text="*{author}"></td>
+        </tr>
+        <tr>
+            <td>Title:</td>
+            <td th:text="*{title}"></td>
+        </tr>
+        <tr>
+            <td>Author:</td>
+            <td th:text="*{author}"></td>
+        </tr>
+        <tr>
+            <td>Content:</td>
+            <td th:text="*{content}"></td>
+        </tr>
+        <tr>
+            <td>Category:</td>
+            <td th:each="q: ${blog.categories}" th:text="${q.categoryName}"></td>
+        </tr>
+        <tr>
+            <td>Date Release:</td>
+            <td th:text="${#dates.format(blog.dateRelease, 'dd/MM/yyyy')}"></td>
+        </tr>
+    </table>
+    <a th:text="|Back to list|" th:href="@{/blog/list}"></a>
+</body>
+</html>

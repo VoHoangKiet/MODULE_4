@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List category</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>List category</h1>
+    <div th:text="${#locale.setDefault('vn')}"></div>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Category</th>
+            <th>Title</th>
+            <th>More</th>
+        </tr>
+        <tr th:each="p: ${categories}" th:object="${p}">
+            <td th:text="*{categoryId}"></td>
+            <td th:text="*{categoryName}"></td>
+            <td>
+                <p th:each="q: ${p.blogs}" th:text="${q.title}"></p>
+            </td>
+
+            <td>
+<!--                <a th:href="@{/product/detail/{id}(id=*{id})}">Detail</a>-->
+<!--                <a th:href="@{/product/update(id=*{id})}">Update</a>-->
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

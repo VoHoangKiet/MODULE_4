@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Update blog</title>
+</head>
+<body>
+    <h1>Update blog</h1>
+    <form th:action="@{/blog/update}" method="post" th:object="${blog}">
+        <table>
+            <tr>
+                <td>ID</td>
+                <td><input type="text" th:field="*{id}" /></td>
+            </tr>
+            <tr>
+                <td>Author</td>
+                <td><input type="text" th:field="*{author}" /></td>
+            </tr>
+            <tr>
+                <td>Date Release</td>
+                <td><input type="text" th:field="*{dateRelease}" /></td>
+            </tr>
+            <tr>
+                <td>Title</td>
+                <td><input type="text" th:field="*{title}" /></td>
+            </tr>
+            <tr>
+                <td>Category</td>
+                <td>
+                    <div class="form-check" th:each="c : ${categories}" th:object="${c}">
+                        <input class="form-check-input" type="checkbox" th:value="*{categoryId}"
+                               th:checked="*{categoryId}" id="flexCheckChecked" name="categories">
+                        <label class="form-check-label" for="flexCheckChecked" th:text="*{categoryName}">
+                        </label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Content</td>
+                <td><input type="text" th:field="*{content}" /></td>
+            </tr>
+            <tr>
+                <td>Date release</td>
+                <td><input type="text" th:field="*{dateRelease}" placeholder="dd/MM/yyyy" /></td>
+            </tr>
+            <tr>
+                <td><input type="reset" value="Reset"></td>
+                <td><input type="submit" value="Update"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
